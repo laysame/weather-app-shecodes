@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    font-family: 'Poppins', sans-serif;
+    border: 5px solid;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cffffe' /%3E%3Cstop offset='25%25' stop-color='%23f9f7d9' /%3E%3Cstop offset='50%25' stop-color='%23fce2ce' /%3E%3Cstop offset='100%25' stop-color='%23ffc1f3' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3'/%3E %3C/svg%3E") 1;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+li {
+    list-style: none;
+    margin-top: 3px;
+}
+
+div h1 {
+    color: #4e3188;
+    font-size: 2rem;
+}
+
+#weather-description {
+    color: #4e3188;
+    margin-top: 5px;
+    display: block;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.low-high li {
+    display: inline;
+    list-style: none;
+}
+
+div h2, span a {
+    color: #3c4245;
+    text-decoration: none;
+    display: inline;
+}
+
+ul img {
+    width: 30px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.weather-icon {
+    width: 60px;
+    padding-right: 10px;
+}
+
+#temperature {
+    font-size: 3.5rem;
+}
+
+#degree {
+    display: inline;
+    position: relative;
+    top: -20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#city, .forecast-max-temp {
+    color: #4e3188;
+}
+
+#input-form-control, #button-addon2, #button-addon3 {
+    border: 1px solid #0278ae;
+}
+
+#button-addon2 {
+    margin-left: 5px;
+}
+
+#button-addon2:hover, #button-addon3:hover {
+    background-color: #4e3188;
+}
+
+.weather-conditions-panel ul {
+    font-size: 0.8rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+.date-city h2 {
+    color: #4e3188;
+    font-size: 1rem;
+}
+
+.forecast {
+    margin: 5px;
+}
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/adfa1331ae.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Weather App | SheCodes Plus </title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="row" style="padding: 20px;">
+
+            <div class="col-12" style="margin-bottom: 10px;">
+                <form id="input-form">
+                    <div class="input-group mb-4 mt-20" style="margin-top: 20px;">
+                        <input type="search" class="form-control rounded" id="input-form-control"
+                               placeholder="Enter a city..." autocomplete="off"
+                               autofocus>
+                        <div>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon3">Current</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="date-city">
+                    <h1 id="city-panel"></h1>
+                    <h2 id="date-panel"></h2>
+                    <h3 id="weather-description"></h3>
+                </div>
+            </div>
+
+            <div class="col-7">
+                <img src="images/cloudy-weather.gif" class="float-start weather-icon" alt="weather icon">
+                <h2 id="temperature"></h2>
+                <span id="degree">
+                        <a href="#" class="degree-active" id="degree-celsius">°C</a>
+                </span>
+                <ul class="low-high" style="padding-left: 0;">
+                    <li id="max-temperature"></li>
+                    <li id="min-temperature"></li>
+                </ul>
+            </div>
+
+
+            <div class="col-5 temp-panel">
+                <div class="row">
+                    <div class="col weather-conditions-panel">
+                        <ul>
+                            <li id="humidity-data"></li>
+                            <li id="pressure-data"></li>
+                            <li id="visibility-data"></li>
+                            <li id="feels-like"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Div with 5 columns - next 5 days forecast -->
+        <div class="row forecast" style="justify-content: stretch;">
+            <div class="col w-25 " >
+                <ul>
+                    <li class="forecast-day">Mon</li>
+                    <li class="forecast-max-temp">10°C</li>
+                    <li class="forecast-min-temp">5°C</li>
+                    <img src="images/rain-cloud-weather.gif" alt="weather icon">
+                </ul>
+            </div>
+            <div class="col w-25">
+                <ul>
+                    <li class="forecast-day">Tue</li>
+                    <li class="forecast-max-temp">10°C</li>
+                    <li class="forecast-min-temp">5°C</li>
+                    <img src="images/rainy-weather.gif" alt="weather icon">
+                </ul>
+            </div>
+
+            <div class="col w-25">
+                <ul>
+                    <li class="forecast-day">Wed</li>
+                    <li class="forecast-max-temp">10°C</li>
+                    <li class="forecast-min-temp">5°C</li>
+                    <img src="images/stormy-weather.gif" alt="weather icon">
+                </ul>
+            </div>
+
+            <div class="col w-25">
+                <ul>
+                    <li class="forecast-day">Thu</li>
+                    <li class="forecast-max-temp">10°C</li>
+                    <li class="forecast-min-temp">5°C</li>
+                    <img src="images/sun-weather.gif" alt="weather icon">
+                </ul>
+            </div>
+
+            <div class="col w-25">
+                <ul>
+                    <li class="forecast-day">Fri</li>
+                    <li class="forecast-max-temp">10°C</li>
+                    <li class="forecast-min-temp">5°C</li>
+                    <img src="images/windy-weather.gif" alt="weather icon">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
