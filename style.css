@@ -100,5 +100,11 @@ ul img {
     margin: 5px;
 }
 
+footer {
+    font-size: 0.7rem;
+    text-align: center;
+}
 
-
+footer span a {
+    color: blue;
+}
